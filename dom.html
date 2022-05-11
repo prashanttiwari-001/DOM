@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>I am Heading 1</h1>
+    <h2>I am sub heading</h2>
+    <h1>I am Heading 2</h1> -->
+    <button class="first">Click Me</button>
+</body>
+    <script>
+        let body = document.querySelector("body");
+        let btn = document.querySelector("button");
+        btn.style.color="white";
+        btn.style.background ="lightgreen";
+        btn.style.fontSize ="4rem";
+        btn.style.border ="none";
+        btn.style.cursor ="pointer";
+        btn.addEventListener("click",function(){
+            let ele = document.createElement("div");
+            ele.innerHTML ="Button is Click";
+            body.appendChild(ele);
+        })
+        body.addEventListener("keypress",function(e){
+            console.log(e);
+        })
+
+    
+        // let selectH2=document.querySelector("h2");
+        // console.log(selectH2);
+        // let selectH1=document.querySelectorAll("h1");
+        // console.log(selectH1);
+        // let btn = document.querySelector("button");
+        // console.log(btn);
+        // getAttribute
+        // let att = btn.getAttribute("class");
+        // console.log("class", att);
+        // for create element
+        // let ele = document.createElement("div");
+        // innerHtml is used for write the text in element
+        // ele.innerHTML ="I am Prashant";
+        // console.log(ele);
+        // query selector is used for select the element
+        // let body = document.querySelector("body");
+        // body.appendChild(ele); 
+        // for style element
+        // btn.style.background="lightpink";
+        // btn.style.border ="none";
+        // ele.style.color="blue";
+    </script>
+</html>
